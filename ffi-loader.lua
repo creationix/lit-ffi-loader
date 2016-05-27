@@ -26,7 +26,7 @@ return function (base, headerName)
     while req do
       local entry = uv.fs_scandir_next(req)
       if not entry then break end
-      entries[#entries + 1] = entry.name
+      entries[#entries + 1] = entry
     end
   end
 
